@@ -4,9 +4,9 @@ import { View, Text, TouchableOpacity, StyleSheet, ImageBackground } from 'react
 const HomeScreen = ({ navigation }) => {
   return (
     <ImageBackground 
-    source={require('../../assets/LoupFond.webp')} // Ajoute une image de fond immersive
-      style={styles.container}
+    source={require('../../assets/LoupFond.webp')} 
       resizeMode="cover"
+      style={styles.container}
     >
       <Text style={styles.title}>Loup-Garou</Text>
 
@@ -21,11 +21,11 @@ const HomeScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    width: '100 %',
+    width: '100%',
     height : '100%',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#000000',
+    backgroundColor: '#0A0A0A',
   },
   title: {
     fontSize: 42,
