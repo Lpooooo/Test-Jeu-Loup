@@ -8,17 +8,42 @@ const HomeScreen = ({ navigation }) => {
       resizeMode="cover"
       style={styles.container}
     >
+
+      <View style={styles.header}>
+        <Text style={styles.headerText}>Accueil</Text>
+</View>
+
       <Text style={styles.title}>Loup-Garou</Text>
 
-
-      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Game')}>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('LobbyPlayerList')}>
         <Text style={styles.buttonText}>Lancer le jeu</Text>
       </TouchableOpacity>
     </ImageBackground>
   );
 };
 
+
+
 const styles = StyleSheet.create({
+  header: {
+    position: 'absolute',
+    top: 30,
+    flex: 1,
+    left: 0,
+    right: 0,
+    adding: 20,
+    alignItems: 'center',
+    zIndex: 1,
+    backgroundColor: '#B89F65',
+    padding: 20,
+    alignItems: 'center',
+    zIndex: 1,
+  },
+  headerText: {
+    color: '#FFFFFF',
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
   container: {
     flex: 1,
     width: '100%',
